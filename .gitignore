@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Dataset and checkpoints
+data/
+results/checkpoints/
+*.pt
+*.pth
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.bbl
+*.blg
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

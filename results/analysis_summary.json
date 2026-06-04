@@ -1,0 +1,109 @@
+{
+  "profiles": {
+    "mobilenetv3": {
+      "alpha": 0.9893669925294718,
+      "eps": 0.5601442878539674,
+      "eta": 0.7101122531506594,
+      "rho": 0.8038225191101835
+    },
+    "shufflenetv2": {
+      "alpha": 0.9778161535679891,
+      "eps": 0.6060247534960508,
+      "eta": 1.0,
+      "rho": 0.8193355206210914
+    },
+    "efficientnet_b0": {
+      "alpha": 0.9798940836048792,
+      "eps": 0.753979990452528,
+      "eta": 0.35448700662556476,
+      "rho": 0.7500291249034665
+    },
+    "deit_tiny": {
+      "alpha": 0.9870077949686878,
+      "eps": 0.6064349012561143,
+      "eta": 0.28683687817011794,
+      "rho": 0.9591901321104594
+    }
+  },
+  "pareto_frontier": [
+    "mobilenetv3",
+    "shufflenetv2",
+    "efficientnet_b0",
+    "deit_tiny"
+  ],
+  "hcs": [
+    {
+      "scenario": "HCS-A (Safety)",
+      "model": "mobilenetv3",
+      "hcs": 0.7920081616928221,
+      "rank": 2.0
+    },
+    {
+      "scenario": "HCS-A (Safety)",
+      "model": "shufflenetv2",
+      "hcs": 0.8603504529559344,
+      "rank": 1.0
+    },
+    {
+      "scenario": "HCS-A (Safety)",
+      "model": "efficientnet_b0",
+      "hcs": 0.7406703619681223,
+      "rank": 4.0
+    },
+    {
+      "scenario": "HCS-A (Safety)",
+      "model": "deit_tiny",
+      "hcs": 0.7625137340089907,
+      "rank": 3.0
+    },
+    {
+      "scenario": "HCS-B (Deployment)",
+      "model": "mobilenetv3",
+      "hcs": 0.7686743981279289,
+      "rank": 2.0
+    },
+    {
+      "scenario": "HCS-B (Deployment)",
+      "model": "shufflenetv2",
+      "hcs": 0.8795260932154256,
+      "rank": 1.0
+    },
+    {
+      "scenario": "HCS-B (Deployment)",
+      "model": "efficientnet_b0",
+      "hcs": 0.6698457962913664,
+      "rank": 3.0
+    },
+    {
+      "scenario": "HCS-B (Deployment)",
+      "model": "deit_tiny",
+      "hcs": 0.6602698627750281,
+      "rank": 4.0
+    },
+    {
+      "scenario": "HCS-C (Balanced)",
+      "model": "mobilenetv3",
+      "hcs": 0.7658615131610705,
+      "rank": 2.0
+    },
+    {
+      "scenario": "HCS-C (Balanced)",
+      "model": "shufflenetv2",
+      "hcs": 0.8507941069212828,
+      "rank": 1.0
+    },
+    {
+      "scenario": "HCS-C (Balanced)",
+      "model": "efficientnet_b0",
+      "hcs": 0.7095975513966095,
+      "rank": 4.0
+    },
+    {
+      "scenario": "HCS-C (Balanced)",
+      "model": "deit_tiny",
+      "hcs": 0.7098674266263449,
+      "rank": 3.0
+    }
+  ],
+  "ranking_stable": true
+}
