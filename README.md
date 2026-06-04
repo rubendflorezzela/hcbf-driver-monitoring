@@ -6,7 +6,7 @@
 
 > **Official repository for the paper:**
 > *"Human-Centered Benchmarking of Vision-Based Driver Monitoring Models"*
-> Ruben Dario Florez-Zela — Universidad Nacional de San Agustin de Arequipa (UNSA), Arequipa, Peru
+> Ruben Dario Florez-Zela | Universidad Nacional de San Agustin de Arequipa (UNSA), Arequipa, Peru
 
 ---
 
@@ -43,10 +43,10 @@ The **Human-Centered Score (HCS)** aggregates the four dimensions under three de
 
 | Model | α (Acc) | ε (Expl) | η (Eff) | ρ (Rob) | HCS-A | HCS-B | HCS-C |
 |---|---|---|---|---|---|---|---|
-| MobileNetV3-Large | **0.989** | 0.560 | 0.710 | 0.804 | 0.792 (2) | 0.769 (2) | 0.766 (2) |
-| ShuffleNetV2 x1.0 | 0.978 | 0.606 | **1.000** | 0.819 | **0.860 (1)** | **0.880 (1)** | **0.851 (1)** |
-| EfficientNet-B0 | 0.980 | **0.754** | 0.354 | 0.750 | 0.741 (4) | 0.670 (3) | 0.710 (4) |
-| DeiT-Tiny | 0.987 | 0.606 | 0.287 | **0.959** | 0.763 (3) | 0.660 (4) | 0.710 (3) |
+| MobileNetV3-Large | **0.989** | 0.560 | 0.710 | 0.804 | 0.7920 (2) | 0.7687 (2) | 0.7659 (2) |
+| ShuffleNetV2 x1.0 | 0.978 | 0.606 | **1.000** | 0.819 | **0.8604 (1)** | **0.8795 (1)** | **0.8508 (1)** |
+| EfficientNet-B0 | 0.980 | **0.754** | 0.354 | 0.750 | 0.7407 (4) | 0.6698 (3) | 0.7096 (4) |
+| DeiT-Tiny | 0.987 | 0.606 | 0.287 | **0.959** | 0.7625 (3) | 0.6603 (4) | 0.7099 (3) |
 
 All four models lie on the **Pareto frontier**: no model dominates all others simultaneously.
 
@@ -67,26 +67,26 @@ The figures below show saliency maps under different perturbation conditions.
 Each row is one test example (ground-truth: *closed*);
 columns are: Input, MobileNetV3-Large, ShuffleNetV2, EfficientNet-B0, DeiT-Tiny.
 
-### Gaussian noise — severe (σ = 40) · *paper Fig. 2*
+### Gaussian noise: severe (σ = 40) · *paper Fig. 2*
 ![Grad-CAM noise severe](results/figures/gradcam_noise_s2.png)
 
 The eyelid contour remains visible to a human observer, yet the three CNNs
 misclassify closed eyes as *open* (the more dangerous error). DeiT-Tiny
 maintains correct predictions throughout.
 
-### Gaussian noise — mild (σ = 10)
+### Gaussian noise: mild (σ = 10)
 ![Grad-CAM noise mild](results/figures/gradcam_noise_s0.png)
 
 Even mild noise disrupts the CNN attribution maps, while the transformer
 retains a focused response on the eyelid region.
 
-### Motion blur — severe (kernel = 17 px)
+### Motion blur: severe (kernel = 17 px)
 ![Grad-CAM blur severe](results/figures/gradcam_blur_s2.png)
 
 All models handle motion blur well (>0.94 F1 retention on average), and the
 saliency maps remain coherent across architectures.
 
-### Brightness shift — severe (factor = 1.5, glare)
+### Brightness shift: severe (factor = 1.5, glare)
 ![Grad-CAM brightness severe](results/figures/gradcam_brightness_s2.png)
 
 Brightness shifts have minimal impact on any architecture, consistent with
@@ -139,7 +139,7 @@ hcbf/
 ## Installation
 
 ```bash
-git clone https://github.com/rflorezz/hcbf-driver-monitoring.git
+git clone https://github.com/rubendflorezzela/hcbf-driver-monitoring.git
 cd hcbf-driver-monitoring
 python3 -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
@@ -302,7 +302,7 @@ The explainability dimension is the most time-intensive step (~30–60 min on a 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 The MRL Eye Dataset has its own license. Refer to the
-[dataset website](http://mrl.cs.vsb.cz/eyedataset) for terms of use.
+[dataset website](https://mrl.cs.vsb.cz/eyedataset.html) for terms of use.
 
 ---
 
@@ -310,7 +310,7 @@ The MRL Eye Dataset has its own license. Refer to the
 
 **Ruben Dario Florez-Zela**
 Universidad Nacional de San Agustin de Arequipa (UNSA), Arequipa, Peru
-rflorezz@unsa.edu.pe
+rflorezz@unsa.edu.pe | rubendfz2206@gmail.com
 
 *RENACYT Level V Researcher*
 *Research interests: Interpretable AI · Driver Monitoring · Edge Deployment · Intelligent Transportation Systems*
