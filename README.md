@@ -14,7 +14,7 @@
 
 This repository contains the complete implementation of the **Human-Centered Benchmarking Framework (HCBF)**, a structured methodology for evaluating vision-based driver monitoring models across four dimensions that reflect the real demands of safety-critical intelligent transportation systems.
 
-**Key finding:** While all four architectures perform near-equivalently on clean accuracy (0.978–0.989), each leads in exactly one HCBF dimension. Critically, the three CNN-based models collapse under Gaussian noise (27–48% F1 retention), whereas DeiT-Tiny retains 92%—and the collapse occurs in the most hazardous direction, misclassifying closed eyes as open. A benchmark restricted to clean accuracy would offer no warning of this vulnerability.
+**Key finding:** While all four architectures perform near-equivalently on clean accuracy (0.978–0.989), each leads in exactly one HCBF dimension. Critically, the three CNN-based models collapse under Gaussian noise (27–48% F1 retention), whereas DeiT-Tiny retains 92%, and the collapse occurs in the most hazardous direction, misclassifying closed eyes as open. A benchmark restricted to clean accuracy would offer no warning of this vulnerability.
 
 ---
 
@@ -121,7 +121,7 @@ hcbf/
 ├── results/
 │   ├── raw_results.json        # Raw per-dimension metrics (all models)
 │   ├── analysis_summary.json  # Normalized profiles, Pareto, HCS
-│   └── figures/               # Generated figures (PDF + PNG)
+│   └── figures/               # Generated figures (PNG)
 └── README.md
 ```
 
@@ -292,8 +292,8 @@ The explainability dimension is the most time-intensive step (~30–60 min on a 
 
 ## Related Work
 
-- Florez-Zela et al. (2024): *A Real-Time Embedded System for Driver Drowsiness Detection Based on Visual Analysis of the Eyes and Mouth*, Sensors 24(19), 6261. https://doi.org/10.3390/s24196261
-- Florez-Zela et al. (2023): *A CNN-Based Approach for Driver Drowsiness Detection by Real-Time Eye State Identification*, Applied Sciences 13(13), 7849. https://doi.org/10.3390/app13137849
+- Florez, R., et al. (2024): *A Real-Time Embedded System for Driver Drowsiness Detection Based on Visual Analysis of the Eyes and Mouth Using Convolutional Neural Network and Mouth Aspect Ratio*, Sensors 24(19), 6261. https://doi.org/10.3390/s24196261
+- Florez, R., et al. (2023): *A CNN-Based Approach for Driver Drowsiness Detection by Real-Time Eye State Identification*, Applied Sciences 13(13), 7849. https://doi.org/10.3390/app13137849
 
 ---
 
