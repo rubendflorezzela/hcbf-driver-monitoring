@@ -295,9 +295,9 @@ The explainability dimension is the most time-intensive step (~30–60 min on a 
 If this work is useful for your research, please cite:
 
 ```bibtex
-@misc{florezzela2026human,
+@misc{florezzela2026hcbf,
       title={Human-Centered Benchmarking of Driver Monitoring Models}, 
-      author={Ruben Dario Florez-Zela},
+      author={Florez-Zela, Ruben Dario},
       year={2026},
       eprint={2606.08123},
       archivePrefix={arXiv},
