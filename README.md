@@ -290,6 +290,24 @@ The explainability dimension is the most time-intensive step (~30–60 min on a 
 
 ---
 
+## Citation
+
+If this work is useful for your research, please cite:
+
+```bibtex
+@misc{florezzela2026human,
+      title={Human-Centered Benchmarking of Driver Monitoring Models}, 
+      author={Ruben Dario Florez-Zela},
+      year={2026},
+      eprint={2606.08123},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2606.08123}, 
+}
+```
+
+---
+
 ## Related Work
 
 - Florez, R., et al. (2024): *A Real-Time Embedded System for Driver Drowsiness Detection Based on Visual Analysis of the Eyes and Mouth Using Convolutional Neural Network and Mouth Aspect Ratio*, Sensors 24(19), 6261. https://doi.org/10.3390/s24196261
