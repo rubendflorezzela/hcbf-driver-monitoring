@@ -324,11 +324,14 @@ The MRL Eye Dataset has its own license. Refer to the
 
 ---
 
-## Contact
+## Author
 
-**Ruben Dario Florez-Zela**
-Universidad Nacional de San Agustin de Arequipa (UNSA), Arequipa, Peru
+**Ruben Dario Florez-Zela**  
+RENACYT Level V Researcher  
+M.Sc. Candidate in Electronic Engineering | UNSA  
+Interpretable AI · Driver Monitoring · Edge Deployment · Intelligent Transportation Systems
 rflorezz@unsa.edu.pe | rubendfz2206@gmail.com
 
-*RENACYT Level V Researcher*
-*Research interests: Interpretable AI · Driver Monitoring · Edge Deployment · Intelligent Transportation Systems*
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?style=flat-square&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=Xf8JgfsAAAAJ&hl=en)
+[![ResearchGate](https://img.shields.io/badge/ResearchGate-00CCBB?style=flat-square&logo=researchgate&logoColor=white)](https://www.researchgate.net/profile/Ruben-Florez-Zela)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/rubendflorezzela)
