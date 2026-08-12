@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript and software release."
+title: "HCBF Driver Monitoring"
+version: "2.0.0"
+authors:
+  - family-names: "Florez-Zela"
+    given-names: "Ruben Dario"
+repository-code: "https://github.com/rubendflorezzela/hcbf-driver-monitoring"
+license: "MIT"
+preferred-citation:
+  type: article
+  title: "Beyond aggregate scores: Deployment-aware and non-compensatory benchmarking of vision-based eye-state recognition models for driver monitoring"
+  authors:
+    - family-names: "Florez-Zela"
+      given-names: "Ruben Dario"
+  year: 2026

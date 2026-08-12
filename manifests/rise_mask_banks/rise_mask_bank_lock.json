@@ -1,0 +1,48 @@
+{
+  "analysis": "HCBF-V2 EXP-2 deterministic RISE mask banks",
+  "status": "LOCKED",
+  "source_status": "PASS",
+  "gate": "PASS_RISE_MASK_BANKS_FROZEN",
+  "created_utc": "2026-08-01T22:46:57.066239+00:00",
+  "script_version": "72_v1.0_deterministic_compact_rise_banks",
+  "source_hashes": {
+    "xai_protocol_lock_sha256": "3233f4c90c97449e4fa444814ab24d1a54f180da888afff32bc88b0b30689677",
+    "xai_sample_manifest_lock_sha256": "16bae434f014d480164da15b3a1fdb14d29a3610d265f309f523512d8281b203"
+  },
+  "files": {
+    "rise_main_seed20260802.npz": {
+      "sha256": "f872d2bac72fa98077e7da60662b65a86f9172a43804fbfadb99aeb78e561222",
+      "size_bytes": 53362
+    },
+    "rise_mask_bank_registry.csv": {
+      "sha256": "cd562ac98d5ff1baa360706b4c424079ea09552571565622e80038c69d1e0c5b",
+      "size_bytes": 1451,
+      "rows": 4
+    },
+    "rise_mask_bank_report.json": {
+      "sha256": "211c57d1b8ad3370fc0c0bada7dfa644b30ebafc47b279ad261c80ba012f5639",
+      "size_bytes": 7897
+    },
+    "rise_mask_generation_spec.json": {
+      "sha256": "ba37119c2a46dfaee2e83e3c22d93e0f3db35592d97bf387fdf142ccfd1d997b",
+      "size_bytes": 1402
+    },
+    "rise_mask_render_validation.csv": {
+      "sha256": "169d36d8642e489abec04ce9030d3d51b6fe6d8c5bcf89db0ad5deb2388e9ea3",
+      "size_bytes": 1133,
+      "rows": 4
+    },
+    "rise_stability_seed20260803.npz": {
+      "sha256": "6e8f9c185e938d6a7813cf6539c7c3ce8af65cca5de4c32facf02393157ed7a6",
+      "size_bytes": 27488
+    },
+    "rise_stability_seed20260804.npz": {
+      "sha256": "3e4f6becc618abda063666546bc2d8fcc463708bf0bc0d5403fb703fd59d7093",
+      "size_bytes": 27566
+    },
+    "rise_stability_seed20260805.npz": {
+      "sha256": "55e6008facec16ecf8726cbbc976bc20667e10ae6a6d5d702ab92ff67931f554",
+      "size_bytes": 27573
+    }
+  }
+}

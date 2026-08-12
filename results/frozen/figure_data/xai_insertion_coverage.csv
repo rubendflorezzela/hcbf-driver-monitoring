@@ -1,0 +1,7 @@
+model,display_name,insertion_valid_pairs,insertion_invalid_pairs,pairs,insertion_valid_fraction,insertion_valid_percent,model_order,role
+mobilenetv3,MobileNetV3-Large,173,327,500,0.346,34.599999999999994,1,MODEL_SPECIFIC_COVERAGE_DIAGNOSTIC
+shufflenetv2,ShuffleNetV2 x1.0,106,394,500,0.212,21.2,2,MODEL_SPECIFIC_COVERAGE_DIAGNOSTIC
+efficientnet_b0,EfficientNet-B0,443,57,500,0.886,88.6,3,MODEL_SPECIFIC_COVERAGE_DIAGNOSTIC
+deit_tiny,DeiT-Tiny,88,412,500,0.176,17.599999999999998,4,MODEL_SPECIFIC_COVERAGE_DIAGNOSTIC
+repvit_m1_0,RepViT-M1.0,131,369,500,0.262,26.200000000000003,5,MODEL_SPECIFIC_COVERAGE_DIAGNOSTIC
+efficientformer_l1,EfficientFormer-L1,96,404,500,0.192,19.2,6,MODEL_SPECIFIC_COVERAGE_DIAGNOSTIC

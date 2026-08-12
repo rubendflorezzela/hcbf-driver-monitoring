@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hcbf-driver-monitoring"
+version = "2.0.0"
+description = "Curated reproducibility package for deployment-aware eye-state model benchmarking"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+license = {text = "MIT"}
+authors = [{name = "Ruben Dario Florez-Zela"}]
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2,<3",
+  "scikit-learn>=1.3,<2",
+  "matplotlib>=3.8,<4",
+  "Pillow>=10,<13",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

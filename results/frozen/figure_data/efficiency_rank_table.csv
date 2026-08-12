@@ -1,0 +1,7 @@
+model,display_name,parameters_rank,state_dict_rank,checkpoint_rank,rtx_b1_rank,rtx_b2_rank,jetson_b1_rank,jetson_b2_rank
+deit_tiny,DeiT-Tiny,4.0,4.0,4.0,1.0,1.0,4.0,5.0
+efficientformer_l1,EfficientFormer-L1,6.0,6.0,6.0,4.0,4.0,5.0,4.0
+efficientnet_b0,EfficientNet-B0,2.0,2.0,2.0,5.0,5.0,3.0,3.0
+mobilenetv3,MobileNetV3-Large,3.0,3.0,3.0,3.0,2.0,2.0,2.0
+repvit_m1_0,RepViT-M1.0,5.0,5.0,5.0,6.0,6.0,6.0,6.0
+shufflenetv2,ShuffleNetV2 x1.0,1.0,1.0,1.0,2.0,3.0,1.0,1.0

@@ -1,0 +1,94 @@
+paper:
+  title: "Beyond aggregate scores: Deployment-aware and non-compensatory benchmarking of vision-based eye-state recognition models for driver monitoring"
+  arxiv: "2606.08123"
+
+models:
+  - mobilenetv3
+  - shufflenetv2
+  - efficientnet_b0
+  - deit_tiny
+  - repvit_m1_0
+  - efficientformer_l1
+
+prediction:
+  threshold: 0.5
+  binary_coding: "open vs non-open"
+  class_0_mrl: closed
+  class_0_rt_bene: blink
+  class_1: open
+  source_target_non_open_semantics_identical: false
+  post_hoc_calibration: false
+
+mrl:
+  split_seed: 42
+  subjects: 37
+  train_subjects: 26
+  validation_subjects: 6
+  test_subjects: 5
+  train_images: 70551
+  validation_images: 4970
+  test_images: 9377
+
+target_domain:
+  dataset: RT-BENE
+  full_zero_shot_subjects: 14
+  full_zero_shot_frames: 107350
+  matched_oof_subjects: 11
+  matched_oof_frames: 77119
+  fixed_validation_subjects: 3
+  outer_test_fold_subject_counts: [4, 4, 3]
+  participant_safe: true
+  initialization: ImageNet-1K
+  warm_start_from_mrl_checkpoint: false
+  optimization_recipe: same_as_mrl
+
+corruptions:
+  intensity_scale: "8-bit [0,255]"
+  gaussian_noise_sigma: [10, 25, 40]
+  gaussian_noise_realizations: 5
+  brightness_factors: [0.5, 0.7, 1.5]
+  horizontal_motion_blur_kernels: [5, 11, 17]
+  non_clean_conditions: 21
+  gray3_is_chroma_ablation: true
+  gray3_is_nir_simulation: false
+
+statistics:
+  participant_cluster_bootstrap_replicates: 10000
+  mrl_bootstrap_seed: 20260725
+  rt_bene_bootstrap_seed: 20260726
+  rise_exact_sign_patterns: 32
+  rise_pairwise_tests: 75
+  rise_min_two_sided_exact_p: 0.0625
+
+deployment:
+  hardware: "NVIDIA Jetson Nano"
+  runtime: "TensorRT FP32"
+  pair_p95_latency_ms_max: 33.333
+  numerical_parity:
+    required: true
+    engines: 12
+    validation_inputs_per_engine: 16
+    p99_abs_probability_delta_max: 1.0e-4
+    max_abs_probability_delta_max: 5.0e-4
+    max_class_disagreements: 0
+    max_repeat_abs_logit_delta: 1.0e-7
+  safety_related_screen:
+    benchmarking_not_certification: true
+    classwise_recall_min: 0.50
+    directional_error_max: 0.50
+    forbid_class_collapse: true
+
+rise:
+  primary_images: 500
+  primary_masks: 4096
+  mask_grid: [8, 8]
+  activation_probability: 0.5
+  stability_images: 64
+  stability_masks_per_bank: 2048
+  insertion_denominator_min: 0.05
+
+historical_hcs:
+  scope: "retrospective four-model audit only"
+  simplex_step: 0.01
+  lattice_vectors: 176851
+  dirichlet_draws: 250000

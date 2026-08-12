@@ -1,0 +1,3 @@
+figure,true_class,xai_sample_id,subject_id,six_model_mean_normalized_deletion_auc
+Fig. 7,closed,XAI_0058,s0008,0.919
+Fig. 7,open,XAI_0319,s0015,0.795

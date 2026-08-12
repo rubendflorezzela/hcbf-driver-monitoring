@@ -1,0 +1,6 @@
+{
+  "pytest_returncode": 0,
+  "pytest_output": "\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m                                                                [100%]\u001b[0m",
+  "verify_returncode": 0,
+  "verify_output": "Verification PASSED.\nFrozen files, protocol anchors, split counts, and headline results agree."
+}

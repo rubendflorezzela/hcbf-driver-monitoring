@@ -1,0 +1,66 @@
+{
+  "status": "FROZEN",
+  "spec_version": "RISE_MASK_RENDER_V1",
+  "created_utc": "2026-08-01T22:46:51.071434+00:00",
+  "random_generator": {
+    "library": "numpy",
+    "bit_generator": "PCG64",
+    "sampling_order": [
+      "coarse_masks_binomial",
+      "shift_y_integers",
+      "shift_x_integers"
+    ],
+    "future_rng_dependency": false,
+    "note": "Exact sampled arrays are stored; future scripts must load them rather than regenerate them."
+  },
+  "compact_representation": {
+    "coarse_shape_per_mask": [
+      8,
+      8
+    ],
+    "coarse_dtype": "uint8",
+    "coarse_values": [
+      0,
+      1
+    ],
+    "shift_y_dtype": "uint16",
+    "shift_x_dtype": "uint16",
+    "mask_index_dtype": "uint32"
+  },
+  "rendering": {
+    "input_size": [
+      224,
+      224
+    ],
+    "cell_size": [
+      28,
+      28
+    ],
+    "upsampled_size": [
+      252,
+      252
+    ],
+    "interpolation": "bilinear",
+    "align_corners": false,
+    "crop": "mask[shift_y:shift_y+224, shift_x:shift_x+224]",
+    "output_dtype": "float32",
+    "output_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "storage": {
+    "format": "deterministic_npz",
+    "compression": "deflate_level_9",
+    "member_order": "lexicographic",
+    "fixed_zip_timestamp": [
+      2020,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "allow_pickle": false
+  }
+}

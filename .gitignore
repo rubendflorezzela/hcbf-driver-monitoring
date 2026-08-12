@@ -1,31 +1,34 @@
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+.pytest_cache/
+*.egg-info/
 
-# Virtual environments
-venv/
+# Environments
 .venv/
-env/
+venv/
+.env/
+conda-meta/
 
-# Dataset and checkpoints
-data/
-results/checkpoints/
-*.pt
-*.pth
-
-# LaTeX auxiliary files
-*.aux
-*.log
-*.out
-*.toc
-*.synctex.gz
-*.bbl
-*.blg
-
-# OS/editor files
-.DS_Store
-Thumbs.db
+# IDE / OS
 .vscode/
 .idea/
+.DS_Store
+Thumbs.db
+
+# Local data and large artifacts
+data/
+checkpoints/
+*.pth
+*.pt
+*.onnx
+*.engine
+*.plan
+
+# Raw RISE artifacts
+**/shards/
+**/raw_saliency/
+
+# Generated figures are reproducible from frozen CSVs
+results/figures/*.png
+results/figures/*.svg
