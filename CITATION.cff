@@ -2,6 +2,8 @@ cff-version: 1.2.0
 message: "If you use this repository, please cite the associated manuscript and software release."
 title: "HCBF Driver Monitoring"
 version: "2.0.0"
+doi: "10.5281/zenodo.21908706"
+date-released: 2026-08-12
 authors:
   - family-names: "Florez-Zela"
     given-names: "Ruben Dario"
