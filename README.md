@@ -1,5 +1,7 @@
 # HCBF Driver Monitoring
 
+[![DOI](https://zenodo.org/badge/1259594313.svg)](https://doi.org/10.5281/zenodo.21908705)
+
 Reproducibility resources for:
 
 **Beyond aggregate scores: Deployment-aware and non-compensatory benchmarking of vision-based eye-state recognition models for driver monitoring**
